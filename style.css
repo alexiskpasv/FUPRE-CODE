@@ -161,6 +161,7 @@ ol li {
   background: rgb(91, 139, 187);
   border: none;
   color: white;
+  /* font-size: large; */
   font-weight: bold;
   transition: all 0.5s ease-in;
 }
