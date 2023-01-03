@@ -87,7 +87,7 @@ a {
   /* font-size: 2rem; */
   color: white;
   font-weight: 700;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   display: inline-block;
 }
 
@@ -186,4 +186,32 @@ ol li {
 
 .card p {
   font-size: 0.7rem;
+}
+
+.icon img {
+  width: 30px;
+}
+
+.icon-location {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.mail {
+  color: #444;
+}
+
+.logo-2 {
+  color: #333;
+}
+
+.social-icon {
+  /* width: 30px;
+  height: 30px; */
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
 }

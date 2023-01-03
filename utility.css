@@ -148,6 +148,11 @@
   /* justify-content: cen1r; */
 }
 
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
 .center {
   text-align: center;
 }
