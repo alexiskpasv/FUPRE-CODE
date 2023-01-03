@@ -143,9 +143,9 @@
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
 
-  /* justify-content: center; */
+  /* justify-content: cen1r; */
 }
 
 .center {
@@ -155,7 +155,7 @@
 .card {
   /* border: 1px solid #444; */
   padding: 10px;
-  gap: 20px;
+  gap: 2px;
   border: 1px solid rgb(199, 196, 196);
 
   /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
@@ -178,7 +178,16 @@
     /* justify-content: center; */
   }
 
+  .img-card img {
+    width: 40px;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+
   .card {
+    flex-direction: row;
   }
 
   .container {

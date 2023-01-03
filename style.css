@@ -177,3 +177,11 @@ ol li {
   display: flex;
   justify-content: center;
 }
+
+.img-card img {
+  width: 25px;
+}
+
+.card p {
+  font-size: 0.7rem;
+}
