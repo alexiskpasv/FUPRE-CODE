@@ -163,7 +163,6 @@ ol li {
   color: white;
   font-weight: bold;
   transition: all 0.5s ease-in;
-  border-radius: 5px;
 }
 
 .btn:hover {
