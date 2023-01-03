@@ -156,12 +156,13 @@ ol li {
 }
 
 .btn {
-  padding: 20px 40px;
+  padding: 10px 20px;
   cursor: pointer;
   background: rgb(91, 139, 187);
   border: none;
   color: white;
-  /* font-size: large; */
+  font-size: 1.3rem;
+
   font-weight: bold;
   transition: all 0.5s ease-in;
 }
