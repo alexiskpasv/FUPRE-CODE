@@ -1,0 +1,222 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  /* background-color: black; */
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.my-2 {
+  margin: 1.5rem 0;
+}
+
+.my-3 {
+  margin: 2rem 0;
+}
+
+.my-4 {
+  margin: 3rem 0;
+}
+
+.my-5 {
+  margin: 4rem 0;
+}
+
+/* margin x */
+
+.mx-1 {
+  margin: 0 1rem;
+}
+
+.mx-2 {
+  margin: 0 1.5rem;
+}
+
+.mx-3 {
+  margin: 0 2rem;
+}
+
+.mx-4 {
+  margin: 0 3rem;
+}
+
+.mx-5 {
+  margin: 0 4rem;
+}
+
+/* margin (margin all around) */
+.m-1 {
+  margin: 1rem;
+}
+
+.m-2 {
+  margin: 1.5rem;
+}
+
+.m-3 {
+  margin: 2rem;
+}
+
+.m-4 {
+  margin: 3rem;
+}
+
+.m-5 {
+  margin: 4rem;
+}
+
+/* padding for y axis */
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 1.5rem 0;
+}
+
+.py-3 {
+  padding: 2rem 0;
+}
+
+.py-4 {
+  padding: 3rem 0;
+}
+
+.py-5 {
+  padding: 4rem 0;
+}
+
+.py-6 {
+  padding: 5rem 0;
+}
+
+.py-7 {
+  padding: 6rem 0;
+}
+
+/* padding */
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 1.5rem;
+}
+
+.p-3 {
+  padding: 2rem;
+}
+
+.p-4 {
+  padding: 3rem;
+}
+
+.p-5 {
+  padding: 4rem;
+}
+
+/* Text sizes */
+
+.xsm {
+  font-size: 0.75rem;
+}
+
+.sm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 2rem;
+}
+
+.lg {
+  font-size: 3rem;
+}
+
+.xl {
+  font-size: 4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  /* justify-content: center; */
+}
+
+.center {
+  text-align: center;
+}
+
+.card {
+  /* border: 1px solid #444; */
+  padding: 10px;
+  gap: 20px;
+  border: 1px solid rgb(199, 196, 196);
+
+  /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 870px) {
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* justify-content: center; */
+  }
+
+  .card {
+  }
+
+  .container {
+    width: 60%;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  p {
+    font-size: 1.7rem;
+  }
+
+  .nav-menu {
+    position: relative;
+    flex-direction: row;
+    display: flex;
+    width: 70%;
+    left: 0;
+    top: 0;
+
+    background-color: transparent;
+  }
+
+  .bgc {
+    padding: 120px 0;
+  }
+
+  .bgc h2 {
+    font-size: 6rem;
+    color: white;
+  }
+
+  ol li {
+    font-size: 1.7rem;
+    padding: 5px 0;
+  }
+}
