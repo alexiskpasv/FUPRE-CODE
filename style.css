@@ -150,7 +150,7 @@ a {
 }
 
 ol li {
-  list-style: lower-roman;
+  list-style-type: disc;
   /* font-size: 1.7rem; */
   padding: 5px 0;
 }
@@ -161,7 +161,7 @@ ol li {
   background: rgb(91, 139, 187);
   border: none;
   color: white;
-  font-weight: bolder;
+  font-weight: bold;
   transition: all 0.5s ease-in;
   border-radius: 5px;
 }
