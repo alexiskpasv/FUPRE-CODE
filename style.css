@@ -347,6 +347,10 @@ ol li {
     /* position: relative; */
   }
 
+  .container h1 {
+    text-align: center;
+  }
+
   .nav-menu {
     position: relative;
     flex-direction: row;
