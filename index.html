@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="utility.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>FUPRE CODE CLUB</title>
   </head>
   <body>
@@ -35,14 +36,18 @@
       </nav>
     </header>
 
-    <section></section>
-
     <section>
       <div class="hero-section">
         <div class="container">
-          <h1 class="xl center">Fupre coding forum</h1>
+          <h1 class="xl center" data-aos="fade-up" data-aos-duration="3000">
+            Fupre coding forum
+          </h1>
         </div>
-        <div class="container py-2">
+        <div
+          class="container py-2"
+          data-aos="fade-down"
+          data-aos-duration="3000"
+        >
           <h3>
             Welcome to fupre coding forum! This is a place for developers of all
             skill levels to ask questions, share knowledge, and discuss all
@@ -59,7 +64,12 @@
     </section>
 
     <section class="">
-      <div class="container curve">
+      <div
+        class="container curve"
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+      >
         <h2>Our Community</h2>
         <p>
           Diverse group of members and a wide range of experience levels, our
@@ -107,7 +117,7 @@
       <div class="container">
         <h1 class="py-4 center">ROADMAP</h1>
 
-        <div>
+        <div data-aos="fade-up">
           <h2 class="center">FRONT END</h2>
           <p>
             Learn HTML, CSS, and JavaScript: These are the three fundamental
@@ -124,7 +134,7 @@
           </p>
         </div>
 
-        <div class="py-3">
+        <div class="py-3" data-aos="fade-up">
           <h2 class="center">BACKEND</h2>
           <ol>
             <li>
@@ -179,7 +189,7 @@
       </div>
     </section>
 
-    <section class="bgc" id="apply-now">
+    <section class="bgc" id="apply-now" data-aos="fade-up">
       <div class="container">
         <h2 class="center">APPLY NOW</h2>
         <br />
@@ -233,6 +243,12 @@
     </section>
 
     <!-- <br> -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script src="script.js"></script>
     <script
       type="module"
