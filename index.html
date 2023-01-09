@@ -184,10 +184,41 @@
         <h2 class="center">APPLY NOW</h2>
         <br />
 
-        <form method="POST" name="contact" netlify>
-          <input type="text" class="field" placeholder="Your Name" />
-          <input type="email" class="field" placeholder="Your Email" />
-          <input type="text" class="field" placeholder="Github repo" />
+        <form name="contact" method="POST" data-netlify="true">
+          <p>
+            <label>
+              <input type="text" class="field" placeholder="Your Name"
+            /></label>
+          </p>
+          <p>
+            <label>
+              <input type="email" class="field" placeholder="Your Email"
+            /></label>
+          </p>
+          <p>
+            <label>
+              <input type="text" class="field" placeholder="Github repo"
+            /></label>
+          </p>
+          <p>
+            <textarea
+              class="field"
+              placeholder="Message"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </p>
+          <p>
+            <button type="submit" class="btn-form">send</button>
+          </p>
+        </form>
+
+        <!-- <form method="POST" name="contact" netlify> -->
+        <!-- <input type="text" class="field" placeholder="Your Name" /> -->
+        <!-- <input type="email" class="field" placeholder="Your Email" /> -->
+        <!-- <input type="text" class="field" placeholder="Github repo" />
           <textarea
             class="field"
             placeholder="Message"
@@ -197,7 +228,7 @@
             rows="10"
           ></textarea>
           <button type="submit" class="btn-form">send</button>
-        </form>
+        </form> -->
       </div>
     </section>
 
