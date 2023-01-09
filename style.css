@@ -41,6 +41,11 @@ body {
   line-height: 1.5;
 }
 
+a {
+  color: white;
+  font-weight: 600;
+}
+
 .navbar {
   display: flex;
   /* min-height: 70px; */
@@ -257,7 +262,7 @@ ol li {
     text-decoration: none;
 
     /* font-size: 2rem; */
-    color: var(--light-color);
+    /* color: var(--light-color); */
     font-weight: 700;
     /* text-transform: uppercase; */
     /* display: flex; */

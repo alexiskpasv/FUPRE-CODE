@@ -165,9 +165,9 @@
 }
 
 .btn {
-  border: 1px solid black;
+  border: none;
   padding: 5px 10px;
-  color: var(--light-color);
+  color: white;
   display: flex;
   justify-content: center;
   transition: all 0.5s ease-in-out;
@@ -175,10 +175,11 @@
   cursor: pointer;
   font-weight: bold;
   border-radius: 10px;
+  text-decoration: none;
+  background-color: var(--hover-btn);
 }
 
 .btn:hover {
-  background-color: var(--hover-btn);
   color: white;
 }
 
