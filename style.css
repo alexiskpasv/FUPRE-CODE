@@ -24,13 +24,14 @@ html {
 }
 
 body {
-  background: rgb(2, 0, 36);
+  /* background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
     rgba(241, 246, 243, 1) 0%,
     rgba(0, 212, 255, 1) 100%
-  );
+  ); */
+  background-color: #fff;
 
   font-family: "Sarabun", sans-serif;
   color: #444;
@@ -127,13 +128,14 @@ li {
   top: 30px;
   gap: 0;
   flex-direction: column;
-  background: rgb(2, 0, 36);
+  /* background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
     rgba(154, 164, 163, 1) 0%,
     rgba(0, 212, 255, 1) 100%
-  );
+  ); */
+  background-color: #000;
   width: 100%;
   text-align: center;
   transition: 0.3s;
@@ -262,7 +264,7 @@ ol li {
     text-decoration: none;
 
     /* font-size: 2rem; */
-    /* color: var(--light-color); */
+    color: var(--light-color);
     font-weight: 700;
     /* text-transform: uppercase; */
     /* display: flex; */
