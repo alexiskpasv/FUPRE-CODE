@@ -209,33 +209,21 @@
         <h2 class="center">APPLY NOW</h2>
         <br />
 
-        <form name="contact" method="POST" data-netlify="true">
-          <p>
+        <form 
+        name="contact" method="POST" data-netlify="true" onsubmit="submit"
+        >
+          
+            
+         
             <label>
-              <input type="text" class="field" placeholder="Your Name"
+              <input type="email" class="field" placeholder="Your Email"  name="email" 
             /></label>
-          </p>
-          <p>
+         
             <label>
-              <input type="email" class="field" placeholder="Your Email"
+              <input type="text" class="field" placeholder="Github repo" name="name"
             /></label>
-          </p>
-          <p>
-            <label>
-              <input type="text" class="field" placeholder="Github repo"
-            /></label>
-          </p>
-          <p>
-            <textarea
-              class="field"
-              placeholder="Message"
-              name=""
-              id=""
-              cols="30"
-              rows="10"
-            ></textarea>
-          </p>
-          <p>
+           
+            
             <button type="submit" class="btn-form">send</button>
           </p>
         </form>
@@ -245,7 +233,7 @@
     <footer class="py-2 bgc">
       <div class="container">
         <p class="py-3">
-          Made by <a href="https://josephbawo.netlify.app/">josephbawo</a>.
+          Made by <a target="_blank" href="https://josephbawo.netlify.app/">josephbawo</a>.
           Member of fupre code club
         </p>
         <div class="flex">
