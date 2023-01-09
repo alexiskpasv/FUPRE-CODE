@@ -216,8 +216,8 @@ h1 {
   font-size: 2rem;
   font-family: "Monoton", cursive;
   text-transform: uppercase;
-  color: transparent;
   color: white;
+  text-align: center;
 }
 h2 {
   font-size: 1.7rem;
@@ -248,16 +248,19 @@ h2 {
 .color-b {
   color: #000 !important;
 }
-.color-b:hover {
-  color: black !important;
-}
+
 .color-w {
   color: white !important;
 }
 
 .icon-i {
-  background: rgba(255, 255, 255, 0.4);
-  padding: 1rem;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+}
+
+.color-b {
+  color: #000 !important;
 }
 /* OTHER*************** */
 
@@ -349,7 +352,7 @@ ol li {
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center !important;
   }
 
   .nav-menu {
@@ -401,6 +404,6 @@ ol li {
 
 @media (max-width: 750px) {
   html {
-    font-size: 70%;
+    font-size: 80%;
   }
 }

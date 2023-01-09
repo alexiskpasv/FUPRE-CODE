@@ -21,12 +21,15 @@ const homeCall = (entries, observer) => {
   console.log(entry);
   const navBar = document.querySelector(".navbar");
   const navLink = document.querySelectorAll(".nav-link");
+  const icon = document.querySelector(".icon-i");
   if (!entry.isIntersecting) {
     navBar.style.background = "white";
     navLink.forEach((nav, i) => {
       nav.classList.add("color-b");
       nav.classList.remove("color-w");
     });
+    icon.classList.add("color-b");
+    icon.classList.remove("color-w");
   } else {
     navBar.style.border = "none";
     navBar.style.background = "transparent";
@@ -34,6 +37,8 @@ const homeCall = (entries, observer) => {
       nav.classList.add("color-w");
       nav.classList.remove("color-b");
     });
+    icon.classList.add("color-w");
+    icon.classList.remove("color-b");
   }
 };
 
