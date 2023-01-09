@@ -189,6 +189,7 @@ section {
 
 ol li {
   list-style-type: disc;
+  font-size: inherit;
 }
 
 .bgc {
@@ -278,8 +279,9 @@ ol li {
   h2 {
     font-size: 3rem;
   }
-  p {
-    font-size: 1.5rem;
+  p,
+  ol li {
+    font-size: 1.3rem;
   }
 
   .curve {
