@@ -165,7 +165,7 @@
 }
 
 .btn {
-  border: 1px solid rgb(163, 161, 161);
+  border: 1px solid black;
   padding: 5px 10px;
   color: var(--light-color);
   display: flex;
@@ -174,7 +174,7 @@
   align-items: center;
   cursor: pointer;
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .btn:hover {
