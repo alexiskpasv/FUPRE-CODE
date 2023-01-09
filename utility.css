@@ -148,89 +148,49 @@
   /* justify-content: cen1r; */
 }
 
-.flex {
-  display: flex;
-  gap: 20px;
-}
-
 .center {
   text-align: center;
 }
 
 .card {
   /* border: 1px solid #444; */
-  padding: 10px;
-  gap: 2px;
-  border: 1px solid rgb(199, 196, 196);
-
-  /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  /* border: 1px solid var(--hover-btn); */
+  padding: 0.8rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 20px;
+  gap: 5px;
 }
 
-@media screen and (min-width: 870px) {
-  .hamburger {
-    display: none;
-    cursor: pointer;
-  }
+.btn {
+  border: 1px solid rgb(163, 161, 161);
+  padding: 5px 10px;
+  color: var(--light-color);
+  display: flex;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 20px;
+}
 
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.btn:hover {
+  background-color: var(--hover-btn);
+  color: white;
+}
 
-    /* justify-content: center; */
-  }
-
-  .img-card img {
-    width: 40px;
-  }
-
-  .card p {
-    font-size: 1rem;
-  }
-
-  .card {
-    flex-direction: row;
-  }
-
-  .container {
-    width: 60%;
-  }
-
-  h1 {
-    font-size: 3rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  p {
-    font-size: 1.7rem;
-  }
-
-  .nav-menu {
-    position: relative;
-    flex-direction: row;
-    display: flex;
-    width: 70%;
-    left: 0;
-    top: 0;
-
-    background-color: transparent;
-  }
-
-  .bgc {
-    padding: 120px 0;
-  }
-
-  .bgc h2 {
-    font-size: 6rem;
-    color: white;
-  }
-
-  ol li {
-    font-size: 1.7rem;
-    padding: 5px 0;
-  }
+.curve {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(23, 71, 67, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  padding: 3rem 2rem;
+  color: white;
+  border-radius: 1rem;
 }
