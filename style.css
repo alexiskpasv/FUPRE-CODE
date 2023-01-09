@@ -206,6 +206,7 @@ ol li {
   font-size: 1.1rem;
   margin-bottom: 22px;
   outline: none;
+  font-family: inherit;
   border: 2px solid var(--light-color);
   /* background-color: rgba(230, 230, 230, 0.6); */
 }
