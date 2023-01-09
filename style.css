@@ -192,6 +192,41 @@ ol li {
 /* form {
   border: 1px solid var(--tertiary-color);
 } */
+
+.field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  outline: none;
+  border: 2px solid var(--light-color);
+  /* background-color: rgba(230, 230, 230, 0.6); */
+}
+
+.field:hover {
+  background-color: rgba(223, 220, 220, 0.678);
+}
+
+.field:focus {
+  background-color: #fff;
+  border: 2px solid rgba(30, 85, 250, 0.47);
+}
+
+.btn-form {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  background-color: var(--btn-bgc);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-form:hover {
+  background-color: var(--hover-btn);
+}
+
 /* ****************************************** */
 
 @media screen and (min-width: 870px) {
