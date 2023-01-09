@@ -217,8 +217,7 @@ h1 {
   font-family: "Monoton", cursive;
   text-transform: uppercase;
   color: transparent;
-  background: white;
-  background-clip: text;
+  color: white;
 }
 h2 {
   font-size: 1.7rem;
@@ -342,7 +341,6 @@ ol li {
 
   .container {
     width: 70%;
-
     margin: 0 auto;
     /* position: relative; */
   }
