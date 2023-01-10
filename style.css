@@ -317,9 +317,9 @@ ol li {
 } */
 
 .field {
-  width: 100%;
-  padding: 0.5rem 1rem;
-  font-size: 1.1rem;
+  width: 60%;
+  padding: 1rem 1.5rem;
+  font-size: 1.6rem;
   margin-bottom: 2.2rem;
   outline: none;
   border: 0.2rem solid var(--light-color);
@@ -336,14 +336,16 @@ ol li {
 }
 
 .btn-form {
-  width: 100%;
-  padding: 0.5rem 1rem;
-  font-size: 1.1rem;
+  width: 10rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.6rem;
   background-color: var(--btn-bgc);
   cursor: pointer;
   outline: none;
   border: none;
   transition: all 0.3s ease-in-out;
+  color: white;
+  text-transform: uppercase;
 }
 
 .btn-form:hover {
@@ -385,6 +387,10 @@ ol li {
 .footer-link:hover,
 .footer-social a {
   opacity: 0.5;
+}
+
+.icon-large {
+  font-size: 4rem;
 }
 
 /* ****************************************** */
@@ -476,5 +482,9 @@ ol li {
 
   .card {
     margin-top: 2rem;
+  }
+
+  .field {
+    width: 80%;
   }
 }
