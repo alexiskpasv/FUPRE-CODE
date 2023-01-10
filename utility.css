@@ -130,7 +130,7 @@
 }
 
 .md {
-  font-size: 2rem;
+  font-size: 4rem;
 }
 
 .lg {
@@ -156,12 +156,38 @@
   /* border: 1px solid #444; */
   display: flex;
   flex-direction: column;
+  justify-content: center;
   /* border: 1px solid var(--hover-btn); */
-  padding: 0.8rem;
+  padding: 2rem;
+  cursor: pointer;
+  border: solid rgba(0, 0, 0, 0.3) 0.1rem;
+  border-radius: 0.3rem;
+  gap: 5px;
+  height: 25rem;
+  width: 29rem;
+  margin-top: 2rem;
+  transition: ease 0.3s;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  margin-top: 3rem;
+}
+
+.card i {
+  font-size: 1.6rem;
+  font-style: normal;
+}
+
+.flex-justify {
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  border-radius: 20px;
-  gap: 5px;
+  transform: translateY(-0.5rem) scale(1.01);
 }
 
 .btn {
@@ -184,14 +210,33 @@
 }
 
 .curve {
-  background: rgb(2, 0, 36);
+  /* background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
     rgba(2, 0, 36, 1) 0%,
     rgba(23, 71, 67, 1) 100%,
     rgba(0, 212, 255, 1) 100%
-  );
-  padding: 3rem 2rem;
-  color: white;
+  ); */
+  color: rgb(0, 0, 0);
   border-radius: 1rem;
+  padding: 0 1rem;
+}
+
+.curve h2 {
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+.curve p {
+  opacity: 0.9;
+}
+
+.curve a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+@media (max-width: 750px) {
+  .card {
+    margin-top: 2rem;
+  }
 }

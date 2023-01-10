@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,12 +8,24 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="utility.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet">
     <title>FUPRE CODE CLUB</title>
   </head>
+
   <body>
     <header>
       <nav class="navbar">
-        <ion-icon name="code-working-outline"></ion-icon>
+        <ion-icon name="code-working-outline" class="icon-i"></ion-icon>
 
         <ul class="nav-menu">
           <li class="nav-item">
@@ -24,7 +37,9 @@
           </li>
 
           <li class="nav-item">
-            <a href="#apply-now" class="nav-link btn">Contact Us</a>
+ 
+            <a href="#apply-now" class="nav-link btn nav-btn">Contact Us</a>
+ 
           </li>
         </ul>
 
@@ -36,25 +51,25 @@
       </nav>
     </header>
 
-    <section>
+    <section class="home-page">
       <div class="hero-section">
         <div class="container">
-          <h1
-            class="xl center"
-            data-aos="fade-down"
-            data-aos-duration="3000"
-            data-aos-once="true"
-          >
+          <h1>
             Fupre coding forum
           </h1>
         </div>
-        <div
-          class="container py-2"
-          data-aos="fade-up"
-          data-aos-duration="3000"
-          data-aos-once="true"
-        >
-          <h3>
+
+      </div>
+    </section>
+
+    <section class="intro-section">
+      <div class="container py-2" data-aos="fade-up" data-aos-duration="3000"
+        data-aos-once="true">
+
+        <h2>Intro</h2>
+
+        <div class="intro-write">
+          <p>
             Welcome to fupre coding forum! This is a place for developers of all
             skill levels to ask questions, share knowledge, and discuss all
             things related to programming. Whether you're a beginner looking for
@@ -62,25 +77,21 @@
             specific issue, we're here to help. Feel free to introduce yourself
             and don't hesitate to ask for help if you need it. We're here to
             learn and grow together as a community.
-          </h3>
+          </p>
           <br />
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLScRY5ou7MNR6n7Xy0Ct0hIPfdve-hOSHPc5g-sNIJNARkt0kw/viewform"
-            class="btn sm"
-            >Join us
+ 
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScRY5ou7MNR6n7Xy0Ct0hIPfdve-hOSHPc5g-sNIJNARkt0kw/viewform"
+            class="btn nav-btn join-btn">Join
+            us
+ 
           </a>
         </div>
       </div>
     </section>
 
     <section class="">
-      <div
-        class="container curve"
-        data-aos="fade-right"
-        data-aos-offset="300"
-        data-aos-easing="ease-in-sine"
-        data-aos-once="true"
-      >
+      <div class="container curve" data-aos="fade-right" data-aos-offset="300"
+        data-aos-easing="ease-in-sine" data-aos-once="true">
         <h2>Our Community</h2>
         <p>
           Diverse group of members and a wide range of experience levels, our
@@ -91,22 +102,19 @@
           <a href="#apply-now"> apply</a>
           on the form below to join.
         </p>
-        <img class="coding-img" src="img/coding-img.jpg" alt="" />
+        <img class="coding-img" src="img/cd.jpg" alt="" />
       </div>
     </section>
 
     <section>
       <div class="container">
         <h2 class="center py-2">FEATURES</h2>
-        <h3 class="py-2"><i>Some of our features includes</i></h3>
+        <h3 class="py-2 heading-features">Some of our features includes</h3>
 
-        <div class="flex">
+        <div class="flex flex-justify">
           <div class="card">
-            <ion-icon
-              class="ion-icon"
-              size="large"
-              name="extension-puzzle-outline"
-            ></ion-icon>
+            <ion-icon class="ion-icon" size="large"
+              name="extension-puzzle-outline"></ion-icon>
             <h3><strong> Helping you debug</strong></h3>
             <i>We try as much to help mostly beginners who have issues.</i>
           </div>
@@ -130,11 +138,13 @@
 
     <section id="roadmap">
       <div class="container">
-        <h1 class="py-4">ROADMAP</h1>
+ 
+        <h2 class="py-4 center roadmap-heading">ROADMAP</h2>
 
-        <div data-aos="fade-up" data-aos-once="true">
-          <h2 class="">FRONT END</h2>
-          <p>
+        <div data-aos="fade-up" data-aos-once="true" class="front-end">
+          <h2 class="center front-end-heading">FRONT END</h2>
+          <p class="front-end-p">
+ 
             Learn HTML, CSS, and JavaScript: These are the three fundamental
             technologies that form the basis of frontend development. Start by
             learning the basics of HTML and CSS, and then move on to learning
@@ -149,9 +159,11 @@
           </p>
         </div>
 
-        <div class="py-3" data-aos="fade-up" data-aos-once="true">
-          <h2 class="">BACKEND</h2>
-          <ol>
+ 
+        <div class="py-3 backend" data-aos="fade-up" data-aos-once="true">
+          <h2 class="center">BACKEND</h2>
+          <ol class="backend-list">
+ 
             <li>
               Learn the basics of a programming language such as Python or Java.
             </li>
@@ -209,6 +221,8 @@
         <h2 class="center">Contact</h2>
         <br />
 
+ 
+ 
         <form 
         name="contact" method="POST" data-netlify="true" onsubmit="submit"
         >
@@ -226,18 +240,20 @@
            
             
             <button type="submit" class="btn-form">send</button>
+ 
           </p>
         </form>
       </div>
     </section>
 
-    <footer class="py-2 bgc">
+    <footer class="py-2 bgc footer">
       <div class="container">
         <p class="py-3">
-          Made by <a target="_blank" href="https://josephbawo.netlify.app/">josephbawo</a>.
+          Made by <a target="_blank" href="https://josephbawo.netlify.app/"
+            class="footer-link">josephbawo</a>.
           Member of fupre code club
         </p>
-        <div class="flex">
+        <div class="flex footer-social">
           <a href=""> Github</a>
           <a href="">Facebook</a>
         </div>
@@ -255,13 +271,10 @@
     </script>
 
     <script src="script.js"></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+    <script type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
+
 </html>
