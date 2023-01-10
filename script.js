@@ -22,11 +22,13 @@ const homeCall = (entries, observer) => {
   const navBar = document.querySelector(".navbar");
   const navLink = document.querySelectorAll(".nav-link");
   const icon = document.querySelector(".icon-i");
+  const bar = document.querySelectorAll(".bar");
   if (!entry.isIntersecting) {
     navBar.style.background = "white";
     navLink.forEach((nav, i) => {
       nav.classList.add("color-b");
       nav.classList.remove("color-w");
+      bar[i].classList.add("color-b");
     });
     icon.classList.add("color-b");
     icon.classList.remove("color-w");

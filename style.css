@@ -16,8 +16,8 @@
 }
 
 html {
-  scroll-behavior: smooth;
   font-size: 100%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -43,6 +43,7 @@ body {
   overflow-x: hidden;
   /* background-color: #444; */
   line-height: 1.5;
+  font-size: 1.6rem;
 }
 
 a {
@@ -56,7 +57,7 @@ a {
   justify-content: space-between;
   width: 100%;
   align-items: center;
-  padding: 0rem 2rem;
+  padding: 1rem 2rem;
   position: fixed;
   z-index: 22;
   left: 0;
@@ -87,7 +88,7 @@ li {
   margin-right: 1rem;
   color: white;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
 }
 
@@ -109,6 +110,9 @@ li {
   border-radius: 0.3rem !important;
   transition: 0.3s linear !important;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-btn::after {
@@ -142,14 +146,24 @@ li {
   background-color: var(--light-color);
 }
 
+.heading-features {
+  text-transform: uppercase;
+  opacity: 0.5;
+  text-align: right;
+  margin-right: 12rem;
+  font-size: 1.5rem;
+}
+
 .hamburger {
   display: block;
   cursor: pointer;
   z-index: 2;
 }
 
-.bar {
-  background: white !important;
+.roadmap-heading {
+  font-size: 5rem;
+  color: var(--primary-color);
+  font-family: "Monoton", cursive;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -177,7 +191,7 @@ li {
     rgba(154, 164, 163, 1) 0%,
     rgba(0, 212, 255, 1) 100%
   ); */
-  background-color: #000;
+  /* background: rgba(0, 0, 0, 0.4); */
   width: 100%;
   text-align: center;
   transition: 0.3s;
@@ -191,6 +205,7 @@ li {
 .nav-menu.active {
   left: 0;
   top: 0;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 ion-icon {
@@ -213,27 +228,29 @@ ion-icon {
 
 /* text and headings */
 h1 {
-  font-size: 2rem;
+  font-size: 5rem;
   font-family: "Monoton", cursive;
   text-transform: uppercase;
   color: white;
   text-align: center;
 }
 h2 {
-  font-size: 1.7rem;
+  font-size: 3rem;
 }
 
 /* INTRO SECTION */
 
 .intro-section h2 {
   text-transform: uppercase;
-  text-align: center;
+  text-align: start;
+  font-size: 3rem;
   margin-bottom: 3rem;
   margin-top: 3rem;
+  opacity: 0.5;
 }
 
 .intro-write {
-  padding: 0 5rem;
+  padding: 0 1rem;
 }
 
 .join-btn {
@@ -241,9 +258,12 @@ h2 {
   height: 4rem;
   text-transform: uppercase;
 }
-
+p {
+  font-size: 1.6rem;
+}
 .intro-write p {
   text-align: left;
+  font-size: 1.6rem;
 }
 .color-b {
   color: #000 !important;
@@ -274,7 +294,8 @@ h2 {
 
 .flex {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -329,11 +350,70 @@ ol li {
   background-color: var(--hover-btn);
 }
 
+/* FRONT END */
+.front-end h2 {
+  margin-top: 5rem;
+  text-align: start;
+  margin-bottom: 3rem;
+}
+
+.backend {
+  margin-top: 5rem;
+}
+
+.backend h2 {
+  margin-bottom: 2rem;
+  text-align: start;
+}
+
+.backend-list li {
+  list-style-type: none;
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.footer-link,
+.footer-social a {
+  text-decoration: none;
+  color: rgb(138, 137, 137);
+}
+
+.footer-social a {
+  color: rgb(255, 255, 255);
+}
+
+.footer-link:hover,
+.footer-social a {
+  opacity: 0.5;
+}
+
 /* ****************************************** */
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 80% !important;
+  }
+  .heading-features {
+    margin-right: 6rem;
+  }
+  .front-end {
+    padding: 3rem;
+  }
+
+  .backend {
+    padding: 3rem !important;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  html {
+    font-size: 60% !important;
+  }
+}
 
 @media screen and (min-width: 870px) {
   html {
-    font-size: 80%;
+    font-size: 60% !important;
   }
 
   /* header */
@@ -362,29 +442,12 @@ ol li {
     width: 60%;
     left: 0;
     top: 0;
-
-    background: none;
+    /* background: white !important; */
   }
 
   .nav-menu a {
     text-decoration: none;
-
-    /* font-size: 2rem; */
-    color: var(--light-color);
     font-weight: 700;
-    /* text-transform: uppercase; */
-    /* display: flex; */
-  }
-
-  /* text and headings */
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 3rem;
-  }
-  p {
-    font-size: 1.5rem;
   }
 
   .curve {
@@ -400,10 +463,18 @@ ol li {
   section {
     padding: 2rem 0;
   }
+
+  .nav-link {
+    color: white;
+  }
 }
 
 @media (max-width: 750px) {
   html {
-    font-size: 80%;
+    font-size: 60% !important;
+  }
+
+  .card {
+    margin-top: 2rem;
   }
 }
