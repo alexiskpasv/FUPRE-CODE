@@ -323,10 +323,9 @@ ol li {
   font-size: 1.6rem;
   margin-bottom: 2.2rem;
   outline: none;
- 
+
   border: 0.2rem solid var(--light-color);
- 
-  
+
   /* background-color: rgba(230, 230, 230, 0.6); */
 }
 
@@ -340,8 +339,10 @@ ol li {
 }
 
 .btn-form {
-  width: 10rem;
-  padding: 1rem 1.5rem;
+  /* width: 10rem; */
+  display: flex;
+  /* justify-content: flex-end; */
+  padding: 1rem 2.5rem;
   font-size: 1.6rem;
   background-color: var(--btn-bgc);
   cursor: pointer;
@@ -458,8 +459,7 @@ ol li {
   .nav-menu a {
     text-decoration: none;
     font-weight: 700;
- 
- 
+
     /* text-transform: uppercase; */
     /* display: flex; */
   }
@@ -474,7 +474,6 @@ ol li {
   p,
   ol li {
     font-size: 1.3rem;
- 
   }
 
   .curve {
